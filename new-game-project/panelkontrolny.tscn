@@ -195,7 +195,7 @@ viewport_path = NodePath("../mainscreen")
 resource_local_to_scene = true
 albedo_texture = SubResource("ViewportTexture_peu4i")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_vo4y7"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ttnnh"]
 _surfaces = [{
 "aabb": AABB(-1.1832467, 0.8891737, -1.1326437, 2.3664935, 0.50007945, 1.6753093),
 "format": 34896613377,
@@ -210,7 +210,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_qr1pr"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_4tp86"]
 resource_name = "statekfixed_Plane_006"
 _surfaces = [{
 "aabb": AABB(-1.1832467, 0.8891737, -1.1326437, 2.3664935, 0.50007945, 1.6753093),
@@ -226,15 +226,16 @@ _surfaces = [{
 "vertex_data": PackedByteArray("Zs///wAAPLR+5sfoPhc9tJgw//8AADy0gBnH6D4XPLTy+VelrFo8tAwGV6WsWjy09v90eIuHPLQHAHR4i4c8tP//fg5+8Ty0AAB+Dn7xPLQMCgAA//88tPL1AAD//zy0////f////3////9/////f////3////9/////f////3////9/////f////3////9/")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_vo4y7")
+shadow_mesh = SubResource("ArrayMesh_ttnnh")
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_p1dc7"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_57x7v"]
 viewport_path = NodePath("../mainscreen")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tyoq3"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p1dc7"]
 resource_local_to_scene = true
 shading_mode = 0
-albedo_texture = SubResource("ViewportTexture_p1dc7")
+albedo_texture = SubResource("ViewportTexture_57x7v")
+refraction_scale = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_afoto"]
 albedo_color = Color(1, 0, 0, 1)
@@ -490,8 +491,8 @@ mesh = SubResource("ArrayMesh_57x7v")
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="Konsola_ekran" parent="statekfixed" index="11" unique_id=966312807]
-mesh = SubResource("ArrayMesh_qr1pr")
-surface_material_override/0 = SubResource("StandardMaterial3D_tyoq3")
+mesh = SubResource("ArrayMesh_4tp86")
+surface_material_override/0 = SubResource("StandardMaterial3D_p1dc7")
 
 [node name="ekrany_przod" parent="statekfixed" index="13" unique_id=1705450940]
 transform = Transform3D(1.0000012, 0, 0, 0, 1.0000012, 0, 0, 0, 1, 0, 0, 0)
